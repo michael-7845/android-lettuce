@@ -1,0 +1,22 @@
+language: zh-CN
+特性: 4HiCam设置（HA0103）-20蓝牙开关
+
+    @F1
+    场景: 1打开蓝牙开关
+        1、进入HiCam控制器:点击页面元素，父【className=android.widget.LinearLayout,index=0】自【className=android.widget.ImageButton,index=0】
+        2、进入HiCam设置:点击页面元素【resourceId=com.hicamapp:id/btn_settings】
+        3、滑动列表找到蓝牙选项:手指纵向滚动框架【resourceId=com.hicamapp:id/list_button】至页面元素【text=Bluetooth】
+        4、打开蓝牙:点击【text=Bluetooth】右边的【resourceId=com.hicamapp:id/switch_button】页面元素
+        5、打开设置:启动活动【com.android.settings/.Settings】@手机2
+        6、进入蓝牙设置:点击文本【"Bluetooth"】
+        7、验证蓝牙是否开启:应该可看到页面元素【resourceId=com.mediatek:id/imageswitch,checked=True】
+    
+    @F1
+    场景: 2关闭蓝牙开关
+        1、进入HiCam控制器:点击页面元素，父【className=android.widget.LinearLayout,index=0】自【className=android.widget.ImageButton,index=0】
+        2、进入HiCam设置:点击页面元素【resourceId=com.hicamapp:id/btn_settings】
+        3、滑动列表找到蓝牙选项:手指纵向滚动框架【resourceId=com.hicamapp:id/list_button】至页面元素【text=Bluetooth】
+        4、关闭蓝牙:点击【text=Bluetooth】右边的【resourceId=com.hicamapp:id/switch_button】页面元素
+        5、打开设置:启动活动【com.android.settings/.Settings】@手机2
+        6、进入蓝牙设置:点击文本【"Bluetooth"】
+        7、验证蓝牙是否开启:应该可看到页面元素【resourceId=com.mediatek:id/imageswitch,checked=False】
